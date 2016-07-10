@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script type="text/javascript" src="./jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="../lib/brainfucky.js"></script>
+	<script>
+	var Brainfuck = require('brainfuck');
+	</script>
+	<script >
+		var i=0, result=0;
+		bf = new Brainfuck();
+		debugger;
+		bf.eval(",>,<[>+<-]>.", 
+			function(){
+				return [5, 8][i++]
+			},
+			function(r){
+				result=r;
+			});
+	</script>
+</head>
+<body>
+</body>
+</html>
